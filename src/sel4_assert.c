@@ -6,8 +6,8 @@
  * see "license_bsd2.txt" for details.
  */
 
-#include <sel4_halt.h>
-#include <sel4_printf.h>
+#include <sel4/halt.h>
+#include <sel4/printf.h>
 
 /**
  * Invoked by macro seL4_fail in seL4_assert.h
