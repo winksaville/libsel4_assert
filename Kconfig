@@ -11,4 +11,4 @@ menuconfig LIB_SEL4_ASSERT
     default n
     select LIB_SEL4_PRINTF
     help
-        "Implements libsel4_fail, libsel4_assert and libsel4_compile_assert"
+        "Implements _seL4_Fail, _seL4_AssertFail"

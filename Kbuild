@@ -6,5 +6,5 @@
 # See "LICENSE_BSD2.txt" for details.
 #
 
-libs-$(CONFIG_LIB_SEL4_ASSERT) += libsel4_assert
-libsel4_assert: common libsel4 libsel4_printf
+libs-$(CONFIG_LIB_SEL4_ASSERT) += libsel4assert
+libsel4assert: common libsel4 libsel4printf

@@ -6,7 +6,7 @@
 # See "LICENSE_BSD2.txt" for details.
 
 # Targets
-TARGETS := libsel4_assert.a
+TARGETS := libsel4assert.a
 
 # Source files required to build the target
 CFILES   := src/sel4_assert.c
@@ -14,7 +14,7 @@ CFILES   := src/sel4_assert.c
 ASMFILES :=
 
 # Libraries we need
-LIBS := sel4 sel4_printf
+LIBS := sel4 sel4printf
 
 # Header files defined here that need to be staged
 HDRFILES :=
