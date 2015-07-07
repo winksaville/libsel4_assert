@@ -6,7 +6,7 @@
  * see "license_bsd2.txt" for details.
  */
 
-#include <sel4/halt.h>
+#include <sel4/stop.h>
 #include <sel4/printf.h>
 
 /**
@@ -16,7 +16,7 @@ void _seL4_Fail(const char* s, const char* file, unsigned int line,
 	const char*  function) {
     seL4_Printf("seL4_fail called at %s:%u in function %s with '%s'\n",
         file, line, function, s);
-    seL4_Halt();
+    seL4_Stop();
 }
 
 /**
@@ -26,5 +26,5 @@ void _seL4_AssertFail(const char* assertion, const char* file, unsigned int line
 	const char*  function) {
     seL4_Printf("Assertion failure '%s' at %s:%u in function %s\n",
        assertion, file, line, function);
-    seL4_Halt();
+    seL4_Stop();
 }

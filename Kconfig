@@ -10,5 +10,6 @@ menuconfig LIB_SEL4_ASSERT
     bool "Build sel4 assert library"
     default n
     select LIB_SEL4_PRINTF
+    select LIB_SEL4_STARTSTOP
     help
         "Implements _seL4_Fail, _seL4_AssertFail"

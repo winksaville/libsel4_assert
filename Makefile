@@ -14,7 +14,7 @@ CFILES   := src/sel4_assert.c
 ASMFILES :=
 
 # Libraries we need
-LIBS := sel4 sel4printf
+LIBS := sel4 sel4printf sel4startstop
 
 # Header files defined here that need to be staged
 HDRFILES :=
