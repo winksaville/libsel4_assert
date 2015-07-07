@@ -10,21 +10,10 @@
 #include <sel4/printf.h>
 
 /**
- * Invoked by macro seL4_fail in seL4_assert.h
+ * Invoked by macro seL4_Assert in sel4/assert.h
  */
-void _seL4_Fail(const char* s, const char* file, unsigned int line,
-	const char*  function) {
-    seL4_Printf("seL4_fail called at %s:%u in function %s with '%s'\n",
-        file, line, function, s);
-    seL4_Stop();
-}
-
-/**
- * Invoked by macro seL4_assert_fail in seL4_assert.h
- */
-void _seL4_AssertFail(const char* assertion, const char* file, unsigned int line,
-	const char*  function) {
-    seL4_Printf("Assertion failure '%s' at %s:%u in function %s\n",
+void __assert_fail(const char* assertion, const char* file, int line, const char* function) {
+    seL4_Printf("Assert/Failure: '%s' at %s:%u in function %s\n",
        assertion, file, line, function);
     seL4_Stop();
 }
