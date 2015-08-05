@@ -7,4 +7,4 @@
 #
 
 libs-$(CONFIG_LIB_SEL4_ASSERT) += libsel4assert
-libsel4assert: common libsel4
+libsel4assert: common libsel4startstop libsel4
